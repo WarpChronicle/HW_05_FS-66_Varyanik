@@ -45,7 +45,107 @@ body {
 
 .main {
     background-color: #f4f1ea;
-    padding: 60px 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    min-height: max(100vh, 1480px);
+}
+
+.left {
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    width: 40%;
+    max-width: 600px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.right {
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    width: 40%;
+    max-width: 600px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.main .card {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main .card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -2;
+    filter: blur(1.4px);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+}
+
+.main .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgb(41 40 40 / 0.32);
+}
+
+.main h2 {
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffead2;
+}
+
+.main p {
+    color: #e1dbca;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.main a {
+    margin-top: auto;
+    align-self: flex-start;
+    color: #fff;
+    background-color: rgb(107 136 111 / 0.61);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 11pt;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.main a:hover {
+    background-color: rgb(107 136 111);
 }
 
 /*.main table{*/
@@ -69,77 +169,6 @@ body {
 /*    width: 50%;*/
 /*    vertical-align: top;*/
 /*    padding: 0;*/
-/*}*/
-
-/*.main .card {*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    min-height: 400px;*/
-/*    padding: 40px;*/
-/*    box-sizing: border-box;*/
-/*    border-radius: 16px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.main .card::before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: -10px;*/
-/*    left: -10px;*/
-/*    right: -10px;*/
-/*    bottom: -10px;*/
-/*    z-index: -2;*/
-/*    filter: blur(1.4px);*/
-/*    background-image: inherit;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-
-/*.main .card::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    z-index: -1;*/
-/*    background-color: rgb(41 40 40 / 0.32);*/
-/*}*/
-
-/*.main h2 {*/
-/*    font-family: "Elms Sans", sans-serif;*/
-/*    font-optical-sizing: auto;*/
-/*    font-weight: 400;*/
-/*    font-style: italic;*/
-/*    color: #ffead2;*/
-/*}*/
-
-/*.main p {*/
-/*    color: #e1dbca;*/
-/*    line-height: 1.5;*/
-/*    margin-bottom: 20px;*/
-/*    font-family: "Raleway", sans-serif;*/
-/*}*/
-
-/*.main a {*/
-/*    margin-top: auto;*/
-/*    align-self: flex-start;*/
-/*    color: #fff;*/
-/*    background-color: rgb(107 136 111 / 0.61);*/
-/*    padding: 8px 16px;*/
-/*    text-decoration: none;*/
-/*    border-radius: 6px;*/
-/*    font-size: 11pt;*/
-/*    font-weight: bold;*/
-/*    transition: background 0.2s;*/
-/*}*/
-
-/*.main a:hover {*/
-/*    background-color: rgb(107 136 111);*/
 /*}*/
 
 
