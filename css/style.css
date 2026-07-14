@@ -1,21 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
 }
+
 .header {
     background-image: url("../images/coffee-bgnd.jpeg");
-    background-position: center;
+    background-position: center 43%;
     background-size: cover;
-    height: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .header h1 {
     font-family: "Schoolbell", cursive;
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    padding-top: 10px;
-    text-align: center;
     color: #6fa57d;
-    font-size: 50pt;
+    font-size: 60pt;
 }
+
+#Brazil {
+    background-image: url("../images/brazil.png");
+}
+#Colombia {
+    background-image: url("../images/colombia.png");
+}
+#India {
+    background-image: url("../images/india.png");
+}
+#Ethiopia {
+    background-image: url("../images/ethiopia.png");
+}
+#Costa-rica {
+    background-image: url("../images/costa-rica.png");
+}
+#Kenya {
+    background-image: url("../images/kenya.png");
+}
+
+.main {
+    background-color: #f4f1ea;
+    padding: 60px 0;
+}
+
+.main table{
+    width: 85%;
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 40px 30px;
+
+}
+
+.main tr {
+    gap: 80px;
+    display: table-row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main td {
+    width: 50%;
+    vertical-align: top;
+    padding: 0;
+}
+
+.main .card {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main .card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -2;
+    filter: blur(1.4px);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+}
+
+.main .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgb(41 40 40 / 0.32);
+}
+
+.main h2 {
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffead2;
+}
+
+.main p {
+    color: #e1dbca;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.main a {
+    margin-top: auto;
+    align-self: flex-start;
+    color: #fff;
+    background-color: rgb(107 136 111 / 0.61);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 11pt;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.main a:hover {
+    background-color: rgb(107 136 111);
+}
+
+
+
