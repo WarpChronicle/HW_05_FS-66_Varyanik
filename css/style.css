@@ -21,8 +21,8 @@ body {
     font-size: 100px;
     font-family: "Covered By Your Grace", cursive;
     color: #2B1810BF;
-    text-align: center;
-    padding-top: 130px;
+    /*text-align: center;*/
+    /*padding-top: 130px;*/
 
 }
 
@@ -39,37 +39,40 @@ body {
 }
 
 .main div > h2 {
+    font-family: "Raleway", sans-serif;
     font-size: 28px;
     font-weight: 700;
     background-color: #aa8eb8;
-    text-align: center;
-    text-transform: uppercase;
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
 }
 
 .main div > p {
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
+    font-size: 1.25em;
     color: #454;
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     text-align: justify;
     text-indent: 32px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
-.main div > a {
+/*.main div > a {*/
 
-    color: #214e34;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
+/*    !*color: #214e34;*!*/
+/*    !*font-weight: 600;*!*/
+/*    !*text-transform: uppercase;*!*/
+/*    !*text-decoration: none;*!*/
+/*    !*letter-spacing: 2px;*!*/
+/*}*/
 
-.left, .right {
-    width: 49%;
-    position: absolute;
-    top:0;
-}
+/*.left, .right {*/
+/*    width: 49%;*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*}*/
 
 .left{
     left: 0;
